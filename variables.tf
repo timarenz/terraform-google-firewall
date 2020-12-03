@@ -26,6 +26,10 @@ variable "allow_rules" {
   # }]
 }
 
+variable "deny_rules" {
+  type = list
+}
+
 variable "source_ranges" {
   type    = list(string)
   default = null
