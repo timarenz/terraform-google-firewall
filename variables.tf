@@ -16,7 +16,7 @@ variable "network" {
 
 variable "allow_rules" {
   type    = list
-  default = null
+  default = []
   # Example for allow_rules
   # default = [{
   #   protocol = "tcp"
@@ -29,7 +29,7 @@ variable "allow_rules" {
 
 variable "deny_rules" {
   type    = list
-  default = null
+  default = []
 }
 
 variable "source_ranges" {
