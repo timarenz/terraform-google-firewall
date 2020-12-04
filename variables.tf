@@ -32,6 +32,11 @@ variable "deny_rules" {
   default = []
 }
 
+variable "direction" {
+  type    = string
+  default = "INGRESS"
+}
+
 variable "source_ranges" {
   type    = list(string)
   default = null
@@ -55,5 +60,3 @@ variable "priority" {
   type    = number
   default = null
 }
-
-

@@ -21,6 +21,7 @@ resource "google_compute_firewall" "main" {
     }
   }
 
+  direction          = var.direction
   source_ranges      = var.source_ranges
   destination_ranges = var.destination_ranges
   source_tags        = var.source_tags
